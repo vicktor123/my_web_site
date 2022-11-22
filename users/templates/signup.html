@@ -1,0 +1,17 @@
+<!-- templates/signup.html -->
+{% extends 'blog/base.html' %}
+
+{% block title %}
+Signup - SaralGyaan
+{% endblock %}
+
+{% block content %}
+<h2>Sign up to </h2>
+
+  	
+  {% csrf_token %}
+  {{ form.as_p }}
+  
+  <button type="submit" class="btn btn-primary">Sign up</button>
+</form>
+{% endblock %}
